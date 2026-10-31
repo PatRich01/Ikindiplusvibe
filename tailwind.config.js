@@ -1,0 +1,108 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ['./code.html'],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        error: '#ba1a1a',
+        'on-secondary-container': '#005312',
+        'tertiary-fixed-dim': '#96ccff',
+        'on-surface': '#0f172a',
+        'on-primary': '#ffffff',
+        'surface-dim': '#f1f5f9',
+        'on-surface-variant': '#475569',
+        'on-secondary-fixed': '#002204',
+        'on-tertiary-fixed-variant': '#004a76',
+        'primary-container': '#f4511e',
+        'error-container': '#ffdad6',
+        outline: '#94a3b8',
+        'surface-container-lowest': '#ffffff',
+        secondary: '#15803d',
+        'surface-variant': '#f1f5f9',
+        'on-primary-container': '#ffffff',
+        'on-secondary': '#ffffff',
+        'on-primary-fixed-variant': '#872100',
+        'surface-container-high': '#f1f5f9',
+        'surface-tint': '#ac2d00',
+        'on-background': '#0f172a',
+        'on-tertiary-fixed': '#001d32',
+        'secondary-container': '#dcfce7',
+        'inverse-surface': '#1e293b',
+        'on-tertiary-container': '#ffffff',
+        'secondary-fixed-dim': '#88d982',
+        'surface-container-low': '#f8fafc',
+        'surface-container-highest': '#e2e8f0',
+        'tertiary-fixed': '#cee5ff',
+        'surface-container': '#ffffff',
+        'on-secondary-fixed-variant': '#005312',
+        'on-error': '#ffffff',
+        'surface-bright': '#ffffff',
+        'primary-fixed-dim': '#ffb5a0',
+        'on-tertiary': '#ffffff',
+        'inverse-on-surface': '#f8fafc',
+        'secondary-fixed': '#a3f69c',
+        'primary-fixed': '#ffdbd1',
+        'on-error-container': '#93000a',
+        tertiary: '#0284c7',
+        primary: '#f4511e',
+        'outline-variant': '#cbd5e1',
+        'on-primary-fixed': '#3b0900',
+        'tertiary-container': '#0284c7',
+        surface: '#ffffff',
+        'inverse-primary': '#ffb5a0',
+        background: '#f8fafc'
+      },
+      borderRadius: {
+        DEFAULT: '0.25rem',
+        lg: '0.5rem',
+        xl: '0.75rem',
+        full: '9999px'
+      },
+      spacing: {
+        gutter: '1rem',
+        'margin-tablet': '2rem',
+        'space-sm': '0.5rem',
+        'space-xl': '2.5rem',
+        margin: '1rem',
+        'space-xs': '0.25rem',
+        'margin-desktop': '3rem',
+        'gutter-desktop': '1.5rem',
+        'space-md': '1rem',
+        'space-lg': '1.5rem'
+      },
+      fontFamily: {
+        'body-lg': ['Inter', 'Plus Jakarta Sans'],
+        'body-sm': ['Inter', 'Plus Jakarta Sans'],
+        'label-sm': ['Plus Jakarta Sans'],
+        'headline-lg-mobile': ['Syne'],
+        'display-xl': ['Syne'],
+        'display-xl-mobile': ['Syne'],
+        'label-lg': ['Plus Jakarta Sans'],
+        'body-md': ['Inter', 'Plus Jakarta Sans'],
+        'headline-md': ['Syne'],
+        'headline-sm': ['Syne'],
+        'label-md': ['Plus Jakarta Sans'],
+        'headline-lg': ['Syne']
+      },
+      fontSize: {
+        'body-lg': ['18px', { lineHeight: '28px', fontWeight: '400' }],
+        'body-sm': ['13px', { lineHeight: '20px', fontWeight: '400' }],
+        'label-sm': ['10px', { lineHeight: '14px', letterSpacing: '0.05em', fontWeight: '700' }],
+        'headline-lg-mobile': ['28px', { lineHeight: '34px', letterSpacing: '-0.01em', fontWeight: '700' }],
+        'display-xl': ['56px', { lineHeight: '64px', letterSpacing: '-0.02em', fontWeight: '800' }],
+        'display-xl-mobile': ['38px', { lineHeight: '44px', letterSpacing: '-0.08em', fontWeight: '800' }],
+        'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.02em', fontWeight: '700' }],
+        'body-md': ['15px', { lineHeight: '24px', fontWeight: '400' }],
+        'headline-md': ['24px', { lineHeight: '32px', letterSpacing: '-0.01em', fontWeight: '700' }],
+        'headline-sm': ['20px', { lineHeight: '28px', fontWeight: '600' }],
+        'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.03em', fontWeight: '600' }],
+        'headline-lg': ['36px', { lineHeight: '44px', letterSpacing: '-0.015em', fontWeight: '700' }]
+      }
+    }
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/container-queries')
+  ]
+};
